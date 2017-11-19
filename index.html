@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tree Configurator</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>Tree Configurator</h1>
+    </header>
+    <main>
+      <form action="index.html" method="post">
+
+        <!-- simple tree -->
+        <h2>Structure</h2>
+        <input id="simple-structure" type="radio" name="structure" value="simple" checked>
+        <label for="simple-structure">Simple</label>
+        <input id="complicated-structure" type="radio" name="structure" value="complicated">
+        <label for="complicated-structure">It's complicated ;)</label>
+        <!-- end of simple tree -->
+
+        <!-- simple tree -->
+        <h2>Pages</h2>
+        <input id="single" type="radio" name="pages" value="single" checked>
+        <label for="single">One page</label>
+        <input id="multiple" type="radio" name="pages" value="multiple">
+        <label for="multiple">Many pages</label>
+        <!-- end of simple tree -->
+
+        <!-- simple tree -->
+        <h2>Styles</h2>
+        <input id="css" type="checkbox" name="css-styles" value="css" checked>
+        <label for="css">CSS</label>
+        <!-- end of simple tree -->
+
+        <!-- simple tree -->
+        <h2>Images</h2>
+        <input id="images" type="checkbox" name="images" value="images" checked>
+        <label for="images">Images</label>
+        <!-- end of simple tree -->
+
+        <!-- simple tree -->
+        <h2>Fonts</h2>
+        <input id="fonts" type="checkbox" name="fonts" value="fonts">
+        <label for="fonts">Fonts</label>
+        <!-- end of simple tree -->
+
+        <!-- simple tree -->
+        <h2>JavaScript</h2>
+        <input id="simple-js" type="checkbox" name="javascript" value="javascript" checked>
+        <label for="js">Simple</label>
+        <!-- end of simple tree -->
+
+        <!-- simple tree -->
+        <h2>Favicon</h2>
+        <input id="favicon" type="checkbox" name="favicon" value="favicon" checked>
+        <label for="js">Favicon</label>
+        <!-- end of simple tree -->
+
+        <br><br><br><br><br>
+        <input type="submit" value="Generate" >
+      </form>
+      <div class="tree-view">
+        <ul>
+          <li>app</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p>Karol Krusiec 2017</p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
