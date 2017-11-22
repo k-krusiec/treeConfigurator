@@ -15,49 +15,92 @@
       <form action="index.html" method="post">
 
         <!-- simple tree -->
-        <h2>Structure</h2>
-        <input id="simple-structure" type="radio" name="structure" value="simple" checked>
-        <label for="simple-structure">Simple</label>
-        <input id="complicated-structure" type="radio" name="structure" value="complicated">
-        <label for="complicated-structure">It's complicated ;)</label>
+        <fieldset>
+          <h2>Structure</h2>
+          <input id="simple" type="radio" name="structure" value="simple" checked>
+          <label for="simple">Simple</label>
+          <input id="complicated" type="radio" name="structure" value="complicated">
+          <label for="complicated">It's complicated ;)</label>
+        </fieldset>
         <!-- end of simple tree -->
 
         <!-- simple tree -->
-        <h2>Pages</h2>
-        <input id="single" type="radio" name="pages" value="single" checked>
-        <label for="single">One page</label>
-        <input id="multiple" type="radio" name="pages" value="multiple">
-        <label for="multiple">Many pages</label>
+        <fieldset>
+          <h2>Pages</h2>
+          <input id="single" type="radio" name="pages" value="single" checked>
+          <label for="single">One page</label>
+          <input id="multiple" type="radio" name="pages" value="multiple">
+          <label for="multiple">Many pages</label>
+        </fieldset>
+        <!-- end of simple tree -->
+
+
+        <!-- simple/complicated tree -->
+        <fieldset>
+          <h2>Styles</h2>
+          <div class="simple-set">
+            <input id="css" type="checkbox" name="css-styles" value="css" checked>
+            <label for="css">CSS</label>
+          </div>
+          <div class="complicated-set hidden">
+            <input id="css" type="radio" name="css-styles" value="css" checked>
+            <label for="css">CSS</label>
+            <input id="scss" type="radio" name="scss-styles" value="scss">
+            <label for="scss">SCSS</label>
+          </div>
+        </fieldset>
+        <!-- end of simple/complicated tree -->
+
+        <!-- complicated tree -->
+        <fieldset class="complicated-set hidden">
+          <h2>Package manager</h2>
+          <input id="npm" type="radio" name="npm" value="npm" checked>
+          <label for="npm">npm</label>
+          <input id="yarn" type="radio" name="yarn" value="yarn">
+          <label for="yarn">Yarn</label>
+        </fieldset>
+        <!-- end of complicated tree -->
+
+        <!-- simple tree -->
+        <fieldset>
+          <h2>Images</h2>
+          <input id="images" type="checkbox" name="images" value="images" checked>
+          <label for="images">Images</label>
+        </fieldset>
         <!-- end of simple tree -->
 
         <!-- simple tree -->
-        <h2>Styles</h2>
-        <input id="css" type="checkbox" name="css-styles" value="css" checked>
-        <label for="css">CSS</label>
+        <fieldset>
+          <h2>Fonts</h2>
+          <input id="fonts" type="checkbox" name="fonts" value="fonts">
+          <label for="fonts">Fonts</label>
+        </fieldset>
         <!-- end of simple tree -->
 
-        <!-- simple tree -->
-        <h2>Images</h2>
-        <input id="images" type="checkbox" name="images" value="images" checked>
-        <label for="images">Images</label>
-        <!-- end of simple tree -->
+        <!-- simple/complicated tree -->
+        <fieldset>
+          <h2>Task runner</h2>
+          <div class="simple-set">
+            <input id="simple-js" type="checkbox" name="javascript" value="javascript" checked>
+            <label for="simple-js">Simple</label>
+          </div>
+          <div class="complicated-set hidden">
+            <input id="simple-js" type="radio" name="javascript" value="javascript" checked>
+            <label for="simple-js">Simple</label>
+            <input id="gulp" type="radio" name="javascript" value="gulp">
+            <label for="gulp">gulp</label>
+            <input id="webpack" type="radio" name="javascript" value="webpack">
+            <label for="webpack">webpack</label>
+          </div>
+        </fieldset>
+        <!-- end of simple/complicated tree -->
 
         <!-- simple tree -->
-        <h2>Fonts</h2>
-        <input id="fonts" type="checkbox" name="fonts" value="fonts">
-        <label for="fonts">Fonts</label>
-        <!-- end of simple tree -->
-
-        <!-- simple tree -->
-        <h2>JavaScript</h2>
-        <input id="simple-js" type="checkbox" name="javascript" value="javascript" checked>
-        <label for="js">Simple</label>
-        <!-- end of simple tree -->
-
-        <!-- simple tree -->
-        <h2>Favicon</h2>
-        <input id="favicon" type="checkbox" name="favicon" value="favicon" checked>
-        <label for="js">Favicon</label>
+        <fieldset>
+          <h2>Favicon</h2>
+          <input id="favicon" type="checkbox" name="favicon" value="favicon" checked>
+          <label for="js">Favicon</label>
+        </fieldset>
         <!-- end of simple tree -->
 
         <br><br><br><br><br>
@@ -65,7 +108,7 @@
       </form>
       <div class="tree-view">
         <ul>
-          <li>app</li>
+          <li class="mainFolder">app</li>
         </ul>
       </div>
     </main>
